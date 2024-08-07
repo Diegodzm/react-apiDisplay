@@ -5,7 +5,7 @@ import { useContext,useEffect } from "react"
 const Home =()=>{
 
     return <div className="container bg-dark">{
-       <h2 className="bg-secondary">asd world</h2>
+       <h2 className="mx-auto">hello world</h2>
 }</div>
 
 
