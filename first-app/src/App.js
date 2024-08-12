@@ -2,14 +2,16 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import './App.css';
 import Home from "./views/home";
 import injectContext from './store/context';
-import Navbar from './components/navbar';
+import NavReact from './components/navbar';
+import Login from './components/login';
 
 function App() {
   return (
     <BrowserRouter>
-    <Navbar></Navbar>
+    <NavReact></NavReact>
     <Routes>
       <Route path='/'  element={<Home/>}></Route>
+      <Route path='/login'  element={<Login/>}></Route>
     </Routes>
    </BrowserRouter>
 
