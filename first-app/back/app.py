@@ -21,6 +21,7 @@ jwt = JWTManager(app)
 @app.route('/')
 def home():
     return 'hello'
+@app.route("/login")
 
 
 if __name__  == '__main__':
