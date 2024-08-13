@@ -21,10 +21,8 @@ jwt = JWTManager(app)
 @app.route('/')
 def home():
     return 'hello'
-@app.route("/login")
 
 
 if __name__  == '__main__':
-
     app.run(host='localhost',port=5000)
     app.run(host='localhost',port=5000,debug=True)
