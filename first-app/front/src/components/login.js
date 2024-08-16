@@ -7,7 +7,6 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap";
 
 
 
-
 const Login = () => {
     const { store, actions } = useContext(Context)
     const [validated, set_Validated] = useState(false);
@@ -84,8 +83,7 @@ const Login = () => {
                 <div className="d-flex mt-5">
                 <Button className='me-4 col-5 ' type="submit" onClick={submitFn}>Submit</Button>
                 <GoogleLogin
-                        
-                        onSuccess={(credentialResponse) => {
+                         onSuccess={(credentialResponse) => {
                             const credentialResponsedecoded = jwtDecode(credentialResponse.credential)
                             actions.handleSubmitGoogleuser(credentialResponsedecoded)
                             console.log(credentialResponsedecoded)
