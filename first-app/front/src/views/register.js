@@ -19,7 +19,7 @@ const Register = () => {
                 <input type="password" name="password"  onChange={actions.handleOnchange} className="form-control" id="floatingPassword" placeholder="Password"></input>
                 <label htmlFor="floatingPassword">Password</label>
             </div>
-            <button className="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+            <button className="btn btn-primary w-100 py-2">Sign in</button>
             <p className="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
         </form>
     </div>
